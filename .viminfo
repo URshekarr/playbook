@@ -21,31 +21,42 @@
 
 # Registers:
 ""1	LINE	0
-	        enabled: yes
+	      
 "2	LINE	0
-	        state: started
+	        path: mydir
 "3	LINE	0
-	        name: httpd
+	      fiel:
 "4	LINE	0
-	      service:
+	    - name: permission change
 "5	LINE	0
+	        enabled: yes
+"6	LINE	0
+	        state: started
+"7	LINE	0
+	        name: httpd
+"8	LINE	0
+	      service:
+"9	LINE	0
 	    - name: start httpd sevice
 
 # File marks:
-'0  4  32  ~/playbook/mydircent.yml
-'1  7  14  ~/playbook/ubuntu.yml
-'2  5  8  ~/playbook/ubuntu.yml
-'3  16  20  ~/playbook/ubuntu.yml
-'4  1  0  ~/playbook/ubuntu.rml
-'5  12  26  ~/playbook/centos.yml
-'6  1  26  ~/playbook/index.html
-'7  11  27  ~/playbook/centos.yml
-'8  13  0  ~/playbook/centos.yml
-'9  1  0  ~/index.html
+'0  9  8  ~/playbook/mydir.yml
+'1  6  13  ~/playbook/mydircent.yml
+'2  4  32  ~/playbook/mydircent.yml
+'3  7  14  ~/playbook/ubuntu.yml
+'4  5  8  ~/playbook/ubuntu.yml
+'5  16  20  ~/playbook/ubuntu.yml
+'6  1  0  ~/playbook/ubuntu.rml
+'7  12  26  ~/playbook/centos.yml
+'8  1  26  ~/playbook/index.html
+'9  11  27  ~/playbook/centos.yml
 
 # Jumplist (newest first):
--'  4  32  ~/playbook/mydircent.yml
+-'  9  8  ~/playbook/mydir.yml
+-'  1  0  ~/playbook/mydir.yml
+-'  6  13  ~/playbook/mydircent.yml
 -'  1  0  ~/playbook/mydircent.yml
+-'  4  32  ~/playbook/mydircent.yml
 -'  7  14  ~/playbook/ubuntu.yml
 -'  1  0  ~/playbook/ubuntu.yml
 -'  5  8  ~/playbook/ubuntu.yml
@@ -138,16 +149,26 @@
 -'  1  0  ~/index.html
 -'  1  0  ~/index.html
 -'  1  0  ~/index.html
--'  1  0  ~/index.html
--'  1  0  ~/index.html
--'  1  0  ~/index.html
--'  1  0  ~/index.html
--'  1  0  ~/index.html
 
 # History of marks within files (newest to oldest):
 
+> ~/playbook/mydir.yml
+	"	9	8
+	^	9	20
+	.	9	0
+	+	5	29
+	+	2	12
+	+	9	6
+	+	9	18
+	+	9	0
+
 > ~/playbook/mydircent.yml
-	"	4	32
+	"	6	13
+	^	6	14
+	.	6	14
+	+	4	27
+	+	5	9
+	+	6	14
 
 > ~/playbook/ubuntu.yml
 	"	7	14

@@ -1,0 +1,9 @@
+- hosts: all
+  become: yes
+  tasks: 
+ 
+    - name: create a directory
+      file:
+        path: mydir
+        state: directory
+        mode: '0777'   
