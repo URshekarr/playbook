@@ -1,0 +1,21 @@
+- hosts: centos-slave
+  become: yes
+  tasks:
+    - name: install httpd package
+      yum:
+        name: httpd
+        state: installed
+ 
+    - name: copy index.html file
+      copy:
+        src: index.html
+        dest: /var/www/html
+
+    - name: start httpd sevice
+      service:
+        name: httpd
+        state: started
+        enabled: yes
+
+
+
